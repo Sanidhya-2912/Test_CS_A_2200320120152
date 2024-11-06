@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .login-container {
+            background-color: #333333;
+            padding: 40px;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffab00;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 25px;
+            background-color: #555555;
+            color: #ffffff;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ffab00;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            color: #333333;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e69100;
+        }
+
+        .link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #bbbbbb;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <a href="#" class="link">Forgot Password?</a>
+    </div>
+    <script src="validate.js"></script>
+</body>
+</html>

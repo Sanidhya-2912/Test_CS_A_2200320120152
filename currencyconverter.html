@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+    
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            color: #ffffff;
+        }
+    
+        .converter-container {
+            padding: 20px;
+            width: 300px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            background-color: #1e1e1e;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+    
+        h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+            color: #ffffff;
+        }
+    
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            background-color: #2b2b2b;
+            color: #ffffff;
+        }
+    
+        input::placeholder {
+            color: #888;
+        }
+    
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+    
+        button:hover {
+            background-color: #0056b3;
+        }
+    
+        .result {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #ffffff;
+        }
+    </style>
+    
+    
+    
+</head>
+<body>
+    <div class="converter-container">
+        <h2>Currency Converter</h2>
+        <form id="converterForm">
+            <input type="number" id="amount" placeholder="Enter amount" required>
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+            </select>
+            <select id="toCurrency">
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="CAD">CAD</option>
+                <!-- Add more currencies as needed -->
+            </select>
+            <button type="button" onclick="convertCurrency()">Convert</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="currency.js">
+        
+    </script>
+</body>
+</html>
